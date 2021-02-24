@@ -5,7 +5,7 @@
   "author": "owk-owk130 <owaki-kengo@kayac.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "parcel src/index.html"
+    "dev": "rm dist/* ; parcel src/index.html"
   },
   "devDependencies": {
     "@parcel/optimizer-cssnano": "2.0.0-nightly.600",
@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "gsap": "^3.6.0",
+    "pixi-filters": "^3.2.2",
     "pixi.js": "^5.3.7"
   }
 }
