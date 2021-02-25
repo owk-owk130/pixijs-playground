@@ -5,7 +5,8 @@
   "author": "owk-owk130 <owaki-kengo@kayac.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "rm dist/* ; parcel src/index.html"
+    "dev": "rm dist/* ; parcel src/index.html",
+    "lint": "eslint src/ --ext .ts"
   },
   "devDependencies": {
     "@parcel/optimizer-cssnano": "2.0.0-nightly.600",
@@ -19,9 +20,14 @@
     "@parcel/transformer-sass": "2.0.0-nightly.600",
     "@parcel/transformer-typescript-tsc": "2.0.0-nightly.469",
     "@parcel/validator-typescript": "2.0.0-nightly.430",
+    "@typescript-eslint/eslint-plugin": "^4.15.2",
+    "@typescript-eslint/parser": "^4.15.2",
+    "eslint": "^7.20.0",
+    "eslint-config-prettier": "^8.1.0",
     "node-sass": "^4.14.1",
     "parcel": "^2.0.0-nightly.270",
     "postcss": "^8.2.1",
+    "prettier": "^2.2.1",
     "sass": "^1.32.7",
     "typescript": "^4.1.5"
   },

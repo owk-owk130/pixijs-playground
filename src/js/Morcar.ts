@@ -1,10 +1,10 @@
-import * as PIXI from "pixi.js"
+import * as PIXI from "pixi.js";
 
 export class Morcar {
-  app: PIXI.Application
-  sprite: PIXI.Sprite
+  app: PIXI.Application;
+  sprite: PIXI.Sprite;
   constructor(app: PIXI.Application) {
-    const morcarImage = require('../img/molcar.png');
+    const morcarImage = require("../img/molcar.png");
     this.app = app;
     this.sprite = PIXI.Sprite.from(morcarImage);
     this.sprite.interactive = true;
@@ -12,9 +12,10 @@ export class Morcar {
     this.sprite.filters = [];
     this.app.stage.addChild(this.sprite);
   }
+
   onClick(event: () => void) {
-    this.sprite.on('click', () => {
+    this.sprite.on("click", () => {
       event();
-    })
+    });
   }
 }
